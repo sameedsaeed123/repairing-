@@ -5,11 +5,11 @@ import { FiSettings, FiLayers, FiLock, FiMail, FiPhoneCall, FiChevronLeft, FiChe
 import { Link, useNavigate } from 'react-router-dom';
 import { useI18n } from '../i18n';
 import axios from 'axios';
+import API_URL from '../utils/api';
 
 import { BsQuote } from 'react-icons/bs';
 import { AiFillStar, AiOutlineStar } from 'react-icons/ai';
 
-// Move static data to module scope so it's not re-created on every render
 const SERVICES = [
   { key: 'webDevelopment', name: 'Web Development', img: '/service-1.jpg' },
   { key: 'mobileComputerRepair', name: 'Mobile & Computer Repairing', img: '/service-2.jpg' },
@@ -92,7 +92,6 @@ const RepairServiceHero = memo(function RepairServiceHero({ slides, onButtonClic
   );
 });
 
-// Lightweight client-side review form with image upload/preview
 function ReviewForm() {
   const { t } = useI18n();
   const [name, setName] = useState('');
@@ -132,7 +131,7 @@ function ReviewForm() {
         formData.append('image', imageFile);
       }
 
-      const response = await fetch('http://localhost:5000/api/reviews', {
+  const response = await fetch(`${API_URL}/api/reviews`, {
         method: 'POST',
         body: formData
       });
@@ -262,7 +261,7 @@ const Home = () => {
   useEffect(() => {
     const fetchApprovedReviews = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/reviews/approved');
+  const response = await axios.get(`${API_URL}/api/reviews/approved`);
         setApprovedReviews(response.data);
       } catch (error) {
         console.error('Error fetching approved reviews:', error);
@@ -529,7 +528,7 @@ const Home = () => {
                         {approvedReviews[currentReviewIndex].image && (
                           <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#B32346] to-[#8B1B37] p-1">
                             <img
-                              src={`http://localhost:5000${approvedReviews[currentReviewIndex].image}`}
+                              src={`${API_URL}${approvedReviews[currentReviewIndex].image}`}
                               alt={approvedReviews[currentReviewIndex].name}
                               className="w-full h-full rounded-full object-cover"
                             />
