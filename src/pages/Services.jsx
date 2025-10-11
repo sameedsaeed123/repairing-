@@ -3,6 +3,7 @@ import { useI18n } from '../i18n';
 import { pub } from '../utils/assets';
 import { FiSmartphone, FiShoppingCart, FiZap, FiTrendingUp } from 'react-icons/fi';
 import axios from 'axios';
+import API_URL from '../utils/api';
 import { FiShoppingBag, FiDollarSign, FiShield, FiCheckCircle, FiRefreshCw, FiAward } from 'react-icons/fi';
 import { BsPhoneFill } from 'react-icons/bs';
 
@@ -107,7 +108,7 @@ const Services = () => {
 	useEffect(() => {
 		const fetchReviews = async () => {
 			try {
-				const response = await axios.get('http://localhost:5000/api/reviews/approved');
+				const response = await axios.get(`${API_URL}/api/reviews/approved`);
 				setReviews(response.data);
 			} catch (error) {
 				console.error('Error fetching reviews:', error);
@@ -132,7 +133,7 @@ const Services = () => {
 		setServiceSubmitStatus({ type: '', message: '' });
 
 		try {
-			await axios.post('http://localhost:5000/api/service-requests', {
+			await axios.post(`${API_URL}/api/service-requests`, {
 				name: `${serviceFormData.firstName} ${serviceFormData.lastName}`,
 				email: serviceFormData.email,
 				phone: serviceFormData.phone,
