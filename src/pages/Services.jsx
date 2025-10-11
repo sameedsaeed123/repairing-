@@ -109,7 +109,14 @@ const Services = () => {
 		const fetchReviews = async () => {
 			try {
 				const response = await axios.get(`${API_URL}/api/reviews/approved`);
-				setReviews(response.data);
+				const data = response?.data;
+				if (Array.isArray(data)) {
+					setReviews(data);
+				} else if (data && Array.isArray(data.data)) {
+					setReviews(data.data);
+				} else {
+					setReviews(data ? [data] : []);
+				}
 			} catch (error) {
 				console.error('Error fetching reviews:', error);
 			} finally {
