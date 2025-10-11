@@ -261,8 +261,17 @@ const Home = () => {
   useEffect(() => {
     const fetchApprovedReviews = async () => {
       try {
-  const response = await axios.get(`${API_URL}/api/reviews/approved`);
-        setApprovedReviews(response.data);
+        const response = await axios.get(`${API_URL}/api/reviews/approved`);
+        // API may return an array or an object wrapper. Normalize to an array to be safe.
+        const data = response?.data;
+        if (Array.isArray(data)) {
+          setApprovedReviews(data);
+        } else if (data && Array.isArray(data.data)) {
+          setApprovedReviews(data.data);
+        } else {
+          // fallback: if it's a single object, wrap it; otherwise empty array
+          setApprovedReviews(data ? [data] : []);
+        }
       } catch (error) {
         console.error('Error fetching approved reviews:', error);
       } finally {
