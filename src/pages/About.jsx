@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { pub } from '../utils/assets';
 import { FiSettings, FiLayers, FiLock, FiMail, FiPhoneCall, FiUsers, FiFileText, FiSend } from 'react-icons/fi';
 import { useI18n } from '../i18n';
+import API_URL from '../utils/api';
 
 const About = () => {
 	const { t } = useI18n();
@@ -58,7 +59,7 @@ const About = () => {
 	useEffect(() => {
 		(async () => {
 			try {
-				const res = await fetch('http://localhost:5000/api/team-members/active');
+				const res = await fetch(`${API_URL}/api/team-members/active`);
 				const data = await res.json();
 				setTeamMembers(Array.isArray(data) ? data : []);
 			} catch (e) {
@@ -100,7 +101,6 @@ const About = () => {
 
 	return (
 		<main>
-			{/* Hero Section */}
 			<section className="relative bg-cover bg-center h-[50vh] flex items-center justify-center text-white"
 				style={{ backgroundImage: `url('${pub('about-hero.jpg')}')` }}
 			>
@@ -212,7 +212,7 @@ const About = () => {
 								<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 									{teamMembers.map((m) => (
 										<div key={m._id} className="bg-gray-50 rounded-lg shadow-lg overflow-hidden p-8 text-center transform hover:-translate-y-2 transition-transform duration-300 group">
-											<img src={m.image?.startsWith('http') ? m.image : `http://localhost:5000${m.image}`} alt={m.name} className="w-32 h-32 rounded-full mx-auto mb-6 object-cover border-4 border-transparent group-hover:border-[#B32346] transition-all duration-300" />
+											<img src={m.image?.startsWith('http') ? m.image : `${API_URL}${m.image}`} alt={m.name} className="w-32 h-32 rounded-full mx-auto mb-6 object-cover border-4 border-transparent group-hover:border-[#B32346] transition-all duration-300" />
 											<h3 className="text-xl font-semibold text-gray-800 mb-1">{m.name}</h3>
 											<p className="text-[#B32346] font-medium">{m.position}</p>
 										</div>
@@ -226,7 +226,7 @@ const About = () => {
 												<div key={gi} className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-1">
 													{group.map((m) => (
 														<div key={m._id} className="bg-gray-50 rounded-lg shadow-lg overflow-hidden p-8 text-center transform hover:-translate-y-2 transition-transform duration-300 group">
-															<img src={m.image?.startsWith('http') ? m.image : `http://localhost:5000${m.image}`} alt={m.name} className="w-32 h-32 rounded-full mx-auto mb-6 object-cover border-4 border-transparent group-hover:border-[#B32346] transition-all duration-300" />
+															<img src={m.image?.startsWith('http') ? m.image : `${API_URL}${m.image}`} alt={m.name} className="w-32 h-32 rounded-full mx-auto mb-6 object-cover border-4 border-transparent group-hover:border-[#B32346] transition-all duration-300" />
 															<h3 className="text-xl font-semibold text-gray-800 mb-1">{m.name}</h3>
 															<p className="text-[#B32346] font-medium">{m.position}</p>
 														</div>
