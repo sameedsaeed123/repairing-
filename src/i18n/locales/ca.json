@@ -1,0 +1,251 @@
+{
+  "nav": {
+    "home": "Inici",
+    "about": "Sobre nosaltres",
+    "contact": "Contacta'ns",
+    "services": "Serveis"
+  },
+  "common": {
+    "phone": "+44 7423526826",
+    "bookService": "Reserva un servei",
+    "newsletter": "BUTLLETÍ",
+    "quickLinks": "ENLLAÇOS RÀPIDS",
+    "subscribeNow": "Subscriu-t'hi ara",
+    "subscribeText": "Subscriu-t'hi per rebre novetats sobre els nostres serveis i ofertes.",
+    "followUs": "Segueix-nos:",
+    "firstName": "Nom",
+    "lastName": "Cognoms",
+    "email": "Correu electrònic",
+    "phoneLabel": "Telèfon"
+  },
+  "home": {
+    "ourServices": "Els nostres serveis",
+    "servicesHeading": "Oferim una gran varietat de serveis de reparació de mòbils i ordinadors",
+    "whyChoose": "PER QUÈ NOSALTRES",
+    "forYears": "Més de 12 anys en el sector dels gadgets",
+    "contactUs": "Contacta'ns",
+    "learnMore": "Més informació",
+    "viewMore": "Veure més",
+    "aboutCulture": "SOBRE LA NOSTRA CULTURA",
+    "contactBody": "Mobile and Computer Care treballa amb una gran perícia tècnica. Contacta'ns amb les dades del lloc web. Actualitzem regularment els nostres productes i serveis.",
+    "testimonial": "TESTIMONI",
+    "reviewHeading": "Opinió dels nostres clients",
+    "shareExperience": "Comparteix la teva experiència",
+    "rating": "Valoració",
+    "uploadPhoto": "Puja la teva foto (opcional)",
+    "preview": "Previsualització",
+    "writeReview": "Escriu la teva ressenya",
+    "submitReview": "Envia la ressenya",
+    "thanks": "Gràcies! Hem rebut la teva ressenya.",
+    "emailOptional": "Correu (opcional)",
+    "submitting": "Enviant…",
+    "contactCards": {
+      "email": "Envia'ns un correu",
+      "call": "Truca'ns"
+    },
+    "culture": {
+      "heading": "També t'afecta el temps del protector de pantalla?",
+      "body": "Una pantalla trencada pot causar ansietat. Si necessites ajuda al Regne Unit, trobar un servei de reparació és senzill.",
+      "goalLabel": "El nostre objectiu:",
+      "goalQuote": "\"Ho arreglarem fins que ho aconseguim\""
+    },
+    "info": {
+      "s1": {
+        "title": "Com actualitzar el teu TomTom",
+        "body": "Els problemes de firmware en dispositius GPS TomTom poden fer que el teclat en pantalla deixi de respondre al teu tacte, provocar que la pantalla es congeli o aturar el dispositiu."
+      },
+      "s2": {
+        "title": "Ets també usuari d'iPhone?",
+        "body": "Un cop et passes a l'iPhone, és probable que segueixis utilitzant-lo. Els amants de l'iPhone són molt exigents amb els seus telèfons. Quan es fan malbé, senten urgència per reparar-los o substituir-los."
+      },
+      "s3": {
+        "title": "Protector de pantalla",
+        "body": "Una pantalla trencada pot ser estressant. Necessites un especialista per arreglar la teva pantalla trencada? Podem ajudar-te."
+      }
+    },
+    "testimonialQuote": "\"Servei professional, útil, ràpid i eficient a un preu raonable. Ho recomanaria a qualsevol persona amb un problema al mòbil. La garantia també t'omple de confiança.\"",
+    "testimonialCustomerName": "Keila Shiver",
+    "services": {
+      "webDevelopment": "Desenvolupament web",
+      "mobileComputerRepair": "Reparació de mòbils i ordinadors",
+      "gamingConsoleRepair": "Reparació de consoles",
+      "playstationSpecialist": "Especialista en Playstation",
+      "mobileUpdate": "Actualització de mòbil",
+      "tvRepair": "Reparació de TV",
+      "mobileUnlocking": "Alliberament de mòbils",
+      "mobileSaleAndPurchase": "Compra i venda de mòbils",
+      "printingScanning": "Fotocòpies, impressió i escaneig"
+    },
+    "choose": {
+      "professional": "Professional",
+      "sameDay": "Reparacions en el dia",
+      "genuine": "Peça original"
+    },
+    "hero": {
+      "slide1": "Serveis de reparació de mòbils, ordinadors i consoles de videojocs ràpids i fiables",
+      "slide2": "Dona vida de nou al teu gadget",
+      "cta": "Contacta'ns"
+    }
+  },
+  "services": {
+    "title": "Serveis",
+    "breadcrumb": "Inici / Sobre",
+    "whatWeOffer": "QUÈ OFERIM",
+    "gridHeading": "Els nostres serveis: reparació d'ordinadors, portàtils, TV, consoles i smartphones",
+    "webDevTitle": "Desenvolupament web",
+    "webDevLead": "Construint solucions web potents i escalables que impulsen el teu negoci",
+    "mobileTrade": {
+      "title": "Compra i Venda de Mòbils",
+      "lead": "Compra telèfons certificats de segona mà o ven el teu dispositiu al millor preu del mercat",
+      "sell": {
+        "kicker": "VEN EL TEU DISPOSITIU",
+        "title": "Converteix el teu Telèfon Antic en Diners Avui",
+        "desc": "Obtén cotitzacions instantànies i el millor preu pel teu dispositiu. Procés ràpid, segur i sense complicacions amb pagament el mateix dia garantit.",
+        "tags": [
+          "Cotització Instantània",
+          "Pagament el Mateix Dia",
+          "Sense Tarifes Ocultes",
+          "Preus Justos"
+        ]
+      },
+      "buy": {
+        "kicker": "COMPRA TELÈFONS DE SEGONA MÀ",
+        "title": "Telèfons de Qualitat Premium a Preus Intel·ligents",
+        "desc": "Compra dispositius certificats de segona mà amb protecció de garantia. Cada telèfon està provat a fons i amb qualitat garantida.",
+        "tags": [
+          "Qualitat Certificada",
+          "Garantia Inclosa",
+          "Devolucions de 7 Dies",
+          "Totes les Marques"
+        ]
+      },
+      "cards": {
+        "instantQuote": {
+          "kicker": "VALORACIÓ INSTANTÀNIA",
+          "title": "Obtén la teva Cotització en Minuts",
+          "desc": "Preus ràpids i transparents per al teu dispositiu segons la seva condició i valor de mercat."
+        },
+        "certified": {
+          "kicker": "CERTIFICAT DE SEGONA MÀ",
+          "title": "Dispositius amb Garantia de Qualitat",
+          "desc": "Tots els telèfons de segona mà estan provats a fons, certificats i vénen amb protecció de garantia."
+        },
+        "wideSelection": {
+          "kicker": "ÀMPLIA SELECCIÓ",
+          "title": "Últims Models Disponibles",
+          "desc": "Des de telèfons insígnia fins a opcions econòmiques, troba el dispositiu perfecte per a les teves necessitats."
+        },
+        "bestValue": {
+          "kicker": "PREUS COMPETITIUS",
+          "title": "Ofertes Líders al Mercat",
+          "desc": "Oferim els millors preus del mercat tant per comprar com per vendre dispositius mòbils."
+        }
+      }
+    },
+    "featured": {
+      "kicker": "APLICACIONS WEB A MIDA",
+      "title": "Crea apps web escalables i d'alt rendiment adaptades al teu negoci",
+      "desc": "Des de solucions empresarials fins a plataformes per a clients, creem aplicacions web personalitzades utilitzant frameworks moderns com React, Next.js i Node.js.",
+      "tags": [
+        "React",
+        "Next.js",
+        "Node.js",
+        "TypeScript"
+      ]
+    },
+    "cards": {
+      "responsive": {
+        "kicker": "DISSENY RESPONSIU",
+        "title": "Píxel perfecte en qualsevol dispositiu",
+        "desc": "Dissenys mobile-first que es veuen espectaculars en telèfons, tauletes i ordinadors d'escriptori."
+      },
+      "ecommerce": {
+        "kicker": "SOLUCIONS E‑COMMERCE",
+        "title": "Llança la teva botiga online",
+        "desc": "Plataformes de comerç electrònic amb totes les funcions amb integració de pagaments i gestió d'inventari."
+      },
+      "performance": {
+        "kicker": "OPTIMITZACIÓ DE RENDIMENT",
+        "title": "Temps de càrrega ultraràpids",
+        "desc": "Codi optimitzat, integració de CDN i estratègies de memòria cau per a una velocitat superior."
+      },
+      "seo": {
+        "kicker": "SEO I ANALÍTICA",
+        "title": "Posiciona't més alt, converteix millor",
+        "desc": "Bones pràctiques SEO integrades i integració d'analítica per a resultats mesurables."
+      }
+    },
+    "whyChoose": {
+      "heading": "PER QUÈ TRIAR-NOS",
+      "subheading": "Quan necessitis serveis de reparació, som aquí"
+    },
+    "tabs": {
+      "t1Title": "Ets també usuari d'iPhone?",
+      "t1Body": "Els iPhones s'utilitzen àmpliament per tots els grups d'edat. La gent troba molta comoditat en utilitzar l'iPhone. També els dona una sensació de luxe però còmode. Un cop et passes als iPhones, sempre és probable que l'utilitzis. Els amants de l'iPhone també són molt particulars sobre el seu carregador de telèfon.",
+      "t2Title": "El teu iPhone també necessita reparació?",
+      "t2Body": "Fins i tot amb la millor cura, de vegades els iPhones poden necessitar reparacions. Ja sigui una pantalla trencada, un problema de bateria o un error de programari, els nostres tècnics experts estan aquí per ajudar a tornar el teu dispositiu a la condició de funcionament perfecte de manera ràpida i eficient.",
+      "t3Title": "Quins serveis oferim?",
+      "t3Body": "Oferim una gamma completa de serveis per a tots els teus gadgets, incloent la substitució de pantalles, canvi de bateries, reparació de danys per aigua, recuperació de dades i molt més per a telèfons, tauletes, portàtils i consoles de videojocs."
+    }
+  },
+  "about": {
+    "title": "Sobre nosaltres",
+    "breadcrumb": "Inici / Sobre",
+    "aboutUs": "SOBRE NOSALTRES",
+    "mainHeading": "Més de 14 anys d'experiència",
+    "mainText": "Amb més d'una dècada d'experiència, Mobile and Computer Care és un referent de fiabilitat i expertesa en el sector de la reparació de gadgets. Ens enorgullim del nostre compromís amb la qualitat del servei, els temps de lliurament ràpids i la satisfacció del client.",
+    "features": {
+      "quality": {
+        "title": "Serveis de qualitat",
+        "desc": "Oferim reparacions de primera perquè el teu dispositiu funcioni com nou."
+      },
+      "genuine": {
+        "title": "Peces originals",
+        "desc": "Utilitzem només peces originals i d'alta qualitat per a totes les reparacions."
+      },
+      "security": {
+        "title": "Seguretat de dades",
+        "desc": "La privacitat i seguretat de les teves dades és la nostra màxima prioritat."
+      }
+    },
+    "info": {
+      "who": {
+        "title": "Qui som",
+        "text": "Som els experts en reparació de gadgets i dispositius. La nostra empresa és sinònim de confiança i credibilitat en el mercat contemporani. Treballem amb gran devoció i et donem el 100%. Som el símbol de la mestria i els nostres serveis són la representació del nostre treball dur. Amb una visió de futur, t'oferim resultats garantits."
+      },
+      "history": {
+        "title": "La nostra història",
+        "text": "Amb més de 15 anys d'experiència, el nostre lema era oferir serveis de reparació i tècnics amb fiabilitat i autenticitat, i ho estem aconseguint amb els nostres clients. Hem començat el nostre treball des de les llavors de la sinceritat, dedicació i compromís i ara hem establert un entorn ric de professionalitat."
+      },
+      "why": {
+        "title": "Per què triar-nos",
+        "text": "La nostra missió és oferir als nostres clients la màxima satisfacció i fiabilitat. Ens esforcem pel millor i no fem cap compromís quan es tracta de proporcionar-te els serveis pels quals ens prefereixes. El nostre objectiu és complir les teves expectatives."
+      }
+    },
+    "stats": {
+      "gloriousYears": "Anys gloriosos",
+      "happyCustomer": "Clients feliços",
+      "serviceComplete": "Serveis completats",
+      "satisfactions": "Satisfaccions"
+    },
+    "team": {
+      "heading": "EL NOSTRE EQUIP",
+      "subheading": "Coneix els nostres experts"
+    }
+  },
+  "contact": {
+    "title": "Contacta'ns",
+    "location": "Ubicació",
+    "contact": "Contacte",
+    "email": "Correu",
+    "firstName": "NOM",
+    "lastName": "COGNOMS",
+    "emailLabel": "CORREU",
+    "phone": "TELÈFON",
+    "message": "MISSATGE",
+    "submit": "Envia"
+  },
+  "footer": {
+    "tagline": "El teu soci de confiança en reparacions al Regne Unit."
+  }
+}

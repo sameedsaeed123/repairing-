@@ -1,0 +1,250 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre nosotros",
+    "contact": "Contáctanos",
+    "services": "Servicios"
+  },
+  "common": {
+    "phone": "+44 7423526826",
+    "bookService": "Reservar un servicio",
+    "newsletter": "BOLETÍN",
+    "quickLinks": "ENLACES RÁPIDOS",
+    "subscribeNow": "Suscribirse ahora",
+    "subscribeText": "Suscríbete para recibir novedades sobre nuestros servicios y ofertas.",
+    "followUs": "Síguenos:",
+    "firstName": "Nombre",
+    "lastName": "Apellidos",
+    "email": "Correo electrónico",
+    "phoneLabel": "Teléfono"
+  },
+  "home": {
+    "ourServices": "Nuestros servicios",
+    "servicesHeading": "Ofrecemos una amplia variedad de servicios de reparación de móviles y ordenadores",
+    "whyChoose": "POR QUÉ ELEGIRNOS",
+    "forYears": "Más de 12 años en el sector de los gadgets",
+    "contactUs": "Contáctanos",
+    "learnMore": "Saber más",
+    "viewMore": "Ver más",
+    "aboutCulture": "SOBRE NUESTRA CULTURA",
+    "contactBody": "Mobile and Computer Care trabaja con una gran pericia técnica. Contáctanos con los datos del sitio web. Actualizamos regularmente nuestros productos y servicios.",
+    "testimonial": "TESTIMONIO",
+    "reviewHeading": "Opinión de nuestros clientes",
+    "emailOptional": "Correo (opcional)",
+    "shareExperience": "Comparte tu experiencia",
+    "rating": "Valoración",
+    "uploadPhoto": "Sube tu foto (opcional)",
+    "preview": "Vista previa",
+    "writeReview": "Escribe tu reseña",
+    "submitReview": "Enviar reseña",
+    "thanks": "¡Gracias! Tu reseña fue enviada.",
+    "contactCards": {
+      "email": "Envíanos un correo",
+      "call": "Llámanos"
+    },
+    "info": {
+      "s1": {
+        "title": "Cómo actualizar tu dispositivo TomTom",
+        "body": "Los problemas de firmware en TomTom pueden hacer que el teclado deje de responder, que la pantalla se congele o que el dispositivo se bloquee."
+      },
+      "s2": {
+        "title": "¿También eres usuario de iPhone?",
+        "body": "Una vez que te pasas al iPhone, seguramente lo sigas usando. Los amantes del iPhone son exigentes con su teléfono. Cuando se daña, sienten urgencia por repararlo o reemplazarlo."
+      },
+      "s3": {
+        "title": "Protector de pantalla",
+        "body": "Una pantalla rota puede ser estresante. ¿Necesitas un especialista para arreglarla? Podemos ayudarte."
+      }
+    },
+    "testimonialQuote": "\"Servicio profesional, útil y rápido a un precio razonable. Lo recomendaría a cualquiera con un problema en su móvil. La garantía también aporta confianza.\"",
+    "testimonialCustomerName": "Keila Shiver",
+    "culture": {
+      "heading": "¿También te afecta el tiempo del protector de pantalla?",
+      "body": "Una pantalla rota puede causar ansiedad. Si necesitas ayuda en el Reino Unido, encontrar un servicio de reparación es sencillo.",
+      "goalLabel": "Nuestro objetivo:",
+      "goalQuote": "\"Lo arreglaremos hasta lograrlo\""
+    },
+    "services": {
+      "webDevelopment": "Desarrollo web",
+      "mobileComputerRepair": "Reparación de móviles y ordenadores",
+      "gamingConsoleRepair": "Reparación de consolas",
+      "playstationSpecialist": "Especialista en Playstation",
+      "mobileUpdate": "Actualización de móvil",
+      "tvRepair": "Reparación de TV",
+      "mobileUnlocking": "Liberación de móviles",
+      "mobileSaleAndPurchase": "Compra y venta de móviles",
+      "printingScanning": "Fotocopias, impresión y escaneo"
+    },
+    "choose": {
+      "professional": "Profesional",
+      "sameDay": "Reparaciones en el día",
+      "genuine": "Pieza original"
+    },
+    "hero": {
+      "slide1": "Servicios de reparación de móviles, ordenadores y consolas rápidos y fiables",
+      "slide2": "Devuelve la vida a tu dispositivo",
+      "cta": "Contáctanos"
+    }
+  },
+  "footer": {
+    "tagline": "Tu socio de confianza para reparaciones de móviles, ordenadores y consolas en el Reino Unido."
+  },
+  "services": {
+    "title": "Servicios",
+    "breadcrumb": "Inicio / Sobre",
+    "whatWeOffer": "LO QUE OFRECEMOS",
+    "gridHeading": "Nuestros servicios: reparación de ordenadores, portátiles, TV, consolas y smartphones",
+    "webDevTitle": "Desarrollo web",
+    "webDevLead": "Creamos soluciones web potentes y escalables que impulsan tu negocio",
+    "featured": {
+      "kicker": "APLICACIONES WEB A MEDIDA",
+      "title": "Crea apps web escalables y de alto rendimiento para tu negocio",
+      "desc": "Desde soluciones empresariales hasta plataformas para clientes, creamos apps web con frameworks modernos como React, Next.js y Node.js.",
+      "tags": [
+        "React",
+        "Next.js",
+        "Node.js",
+        "TypeScript"
+      ]
+    },
+    "cards": {
+      "responsive": {
+        "kicker": "DISEÑO RESPONSIVO",
+        "title": "Perfecto en cualquier dispositivo",
+        "desc": "Diseños mobile-first que lucen increíbles en teléfonos, tabletas y equipos de escritorio."
+      },
+      "ecommerce": {
+        "kicker": "SOLUCIONES E‑COMMERCE",
+        "title": "Lanza tu tienda online",
+        "desc": "Plataformas de comercio electrónico con pagos integrados y gestión de inventario."
+      },
+      "performance": {
+        "kicker": "OPTIMIZACIÓN DE RENDIMIENTO",
+        "title": "Tiempos de carga ultrarrápidos",
+        "desc": "Código optimizado, integración de CDN y estrategias de caché para una velocidad superior."
+      },
+      "seo": {
+        "kicker": "SEO Y ANALÍTICA",
+        "title": "Mejor posicionamiento, mejor conversión",
+        "desc": "Buenas prácticas SEO integradas y analítica para resultados medibles."
+      }
+    },
+    "mobileTrade": {
+      "title": "Compra y Venta de Móviles",
+      "lead": "Compra teléfonos certificados de segunda mano o vende tu dispositivo al mejor precio del mercado",
+      "sell": {
+        "kicker": "VENDE TU DISPOSITIVO",
+        "title": "Convierte tu Teléfono Antiguo en Dinero Hoy",
+        "desc": "Obtén cotizaciones instantáneas y el mejor precio por tu dispositivo. Proceso rápido, seguro y sin complicaciones con pago el mismo día garantizado.",
+        "tags": [
+          "Cotización Instantánea",
+          "Pago el Mismo Día",
+          "Sin Tarifas Ocultas",
+          "Precios Justos"
+        ]
+      },
+      "buy": {
+        "kicker": "COMPRA TELÉFONOS DE SEGUNDA MANO",
+        "title": "Teléfonos de Calidad Premium a Precios Inteligentes",
+        "desc": "Compra dispositivos certificados de segunda mano con protección de garantía. Cada teléfono está probado a fondo y con calidad garantizada.",
+        "tags": [
+          "Calidad Certificada",
+          "Garantía Incluida",
+          "Devoluciones de 7 Días",
+          "Todas las Marcas"
+        ]
+      },
+      "cards": {
+        "instantQuote": {
+          "kicker": "VALORACIÓN INSTANTÁNEA",
+          "title": "Obtén tu Cotización en Minutos",
+          "desc": "Precios rápidos y transparentes para tu dispositivo según su condición y valor de mercado."
+        },
+        "certified": {
+          "kicker": "CERTIFICADO DE SEGUNDA MANO",
+          "title": "Dispositivos con Garantía de Calidad",
+          "desc": "Todos los teléfonos de segunda mano están probados a fondo, certificados y vienen con protección de garantía."
+        },
+        "wideSelection": {
+          "kicker": "AMPLIA SELECCIÓN",
+          "title": "Últimos Modelos Disponibles",
+          "desc": "Desde teléfonos insignia hasta opciones económicas, encuentra el dispositivo perfecto para tus necesidades."
+        },
+        "bestValue": {
+          "kicker": "PRECIOS COMPETITIVOS",
+          "title": "Ofertas Líderes en el Mercado",
+          "desc": "Ofrecemos los mejores precios del mercado tanto para comprar como para vender dispositivos móviles."
+        }
+      }
+    },
+    "whyChoose": {
+      "heading": "POR QUÉ ELEGIRNOS",
+      "subheading": "Cuando necesites reparaciones, estamos aquí"
+    },
+    "tabs": {
+      "t1Title": "¿También eres usuario de iPhone?",
+      "t1Body": "Los iPhones se usan ampliamente por todas las edades. Aportan comodidad y sensación de lujo. Una vez te pasas al iPhone, es probable que sigas usándolo. Los amantes del iPhone son muy exigentes con su cargador.",
+      "t2Title": "¿Tu iPhone también necesita reparación?",
+      "t2Body": "Incluso con el mejor cuidado, a veces requieren reparaciones: pantalla rota, batería o fallos de software. Nuestros técnicos expertos te ayudan rápidamente.",
+      "t3Title": "¿Qué servicios ofrecemos?",
+      "t3Body": "Gama completa: cambio de pantalla, baterías, daños por agua, recuperación de datos y más para móviles, tabletas, portátiles y consolas."
+    }
+  },
+  "about": {
+    "title": "Sobre nosotros",
+    "breadcrumb": "Inicio / Sobre",
+    "aboutUs": "SOBRE NOSOTROS",
+    "mainHeading": "Más de 14 años de experiencia",
+    "mainText": "Con más de una década de experiencia, Mobile and Computer Care es un referente de fiabilidad y experiencia en el sector de la reparación.",
+    "features": {
+      "quality": {
+        "title": "Servicios de calidad",
+        "desc": "Ofrecemos reparaciones de primera para que tu dispositivo funcione como nuevo."
+      },
+      "genuine": {
+        "title": "Piezas originales",
+        "desc": "Usamos piezas originales y de alta calidad."
+      },
+      "security": {
+        "title": "Seguridad de datos",
+        "desc": "La privacidad y seguridad de tus datos es prioritaria."
+      }
+    },
+    "info": {
+      "who": {
+        "title": "Quiénes somos",
+        "text": "Somos expertos en reparación de gadgets y dispositivos. Trabajamos con dedicación y compromiso para ofrecerte resultados garantizados."
+      },
+      "history": {
+        "title": "Nuestra historia",
+        "text": "Con más de 15 años de experiencia, ofrecemos servicios técnicos con fiabilidad y autenticidad."
+      },
+      "why": {
+        "title": "Por qué elegirnos",
+        "text": "Nuestra misión es tu satisfacción y confianza. Nos esforzamos por lo mejor sin compromisos."
+      }
+    },
+    "stats": {
+      "gloriousYears": "Años gloriosos",
+      "happyCustomer": "Clientes felices",
+      "serviceComplete": "Servicios completados",
+      "satisfactions": "Satisfacción"
+    },
+    "team": {
+      "heading": "NUESTRO EQUIPO",
+      "subheading": "Conoce a nuestros expertos"
+    }
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "location": "Ubicación",
+    "contact": "Contacto",
+    "email": "Correo",
+    "firstName": "NOMBRE",
+    "lastName": "APELLIDOS",
+    "emailLabel": "CORREO",
+    "phone": "TELÉFONO",
+    "message": "MENSAJE",
+    "submit": "Enviar"
+  }
+}

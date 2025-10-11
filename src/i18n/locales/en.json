@@ -1,0 +1,146 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "contact": "Contact Us",
+    "services": "Services"
+  },
+  "common": {
+    "phone": "+44 7423526826",
+    "bookService": "Book a Service",
+    "newsletter": "NEWSLETTER",
+    "quickLinks": "QUICK LINKS",
+    "subscribeNow": "Subscribe Now",
+    "subscribeText": "Subscribe to get updates on our latest services and offers.",
+    "followUs": "Follow Us:",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "phoneLabel": "Phone"
+  },
+  "home": {
+    "ourServices": "Our Services",
+    "servicesHeading": "We offer a wide variety mobile and computer repair services",
+    "whyChoose": "WHY CHOOSE US",
+    "forYears": "For over 12 years in the gadget area",
+    "contactUs": "Contact us",
+    "learnMore": "Learn More",
+    "viewMore": "View More",
+    "aboutCulture": "ABOUT OUR CULTURE",
+    "contactBody": "Mobile and Computer Care is working as the most refined technical experts in the market. You can contact us through the sources given on the website. Our latest selling items and repair service list is updated on the website regularly. Keep visiting for further details and upcoming trends.",
+    "testimonial": "TESTIMONIAL",
+    "reviewHeading": "Review from our customer",
+    "emailOptional": "Email (optional)",
+    "testimonialQuote": "\"Professional, helpful, prompt efficient service, at a reasonable price. Would recommend them to everyone with a mobile problem. Guarantee also fills you with confidence.\"",
+    "testimonialCustomerName": "Keila Shiver",
+    "info": {
+      "s1": {
+        "title": "How to update your TomTom device",
+        "body": "Firmware problems with TomTom GPS devices can make the on-screen keyboard stop responding to your touch, cause the screen to freeze, or stop the device."
+      },
+      "s2": {
+        "title": "Are you too an iphone user?",
+        "body": "Once you switch to iPhones, you likely keep using them. iPhone lovers are particular about their phones. When damaged, they feel an urgency to repair or replace."
+      },
+      "s3": {
+        "title": "Screen protector",
+        "body": "A broken display can be stressful. Need a repair specialist to fix your broken screen? We can help."
+      }
+    },
+    "shareExperience": "Share your experience",
+    "rating": "Rating",
+    "uploadPhoto": "Upload your photo (optional)",
+    "preview": "Preview",
+    "writeReview": "Write your review",
+    "submitReview": "Submit review",
+    "thanks": "Thanks! Your review was submitted.",
+    "contactCards": {
+      "email": "Send us an email",
+      "call": "Give us a call"
+    }
+  },
+  "footer": {
+    "tagline": "Your trusted partner for mobile, computer, and gaming console repairs in the UK."
+  },
+  "services": {
+    "title": "Services",
+    "breadcrumb": "Home / About",
+    "whatWeOffer": "WHAT WE OFFER",
+    "gridHeading": "Our Services is Computers, Laptops, TV, Gaming Console & Smartphones Repair",
+    "webDevTitle": "Web Development",
+    "webDevLead": "Building powerful, scalable web solutions that drive your business forward",
+    "featured": {
+      "kicker": "CUSTOM WEB APPLICATIONS",
+      "title": "Build Scalable, High-Performance Web Apps Tailored to Your Business",
+      "desc": "From enterprise solutions to customer-facing platforms, we create custom web applications using modern frameworks like React, Next.js, and Node.js.",
+      "tags": ["React", "Next.js", "Node.js", "TypeScript"]
+    },
+    "cards": {
+      "responsive": {
+        "kicker": "RESPONSIVE DESIGN",
+        "title": "Pixel-Perfect on Every Device",
+        "desc": "Mobile-first designs that look stunning on phones, tablets, and desktops."
+      },
+      "ecommerce": {
+        "kicker": "E-COMMERCE SOLUTIONS",
+        "title": "Launch Your Online Store",
+        "desc": "Full-featured e-commerce platforms with payment integration and inventory management."
+      },
+      "performance": {
+        "kicker": "PERFORMANCE OPTIMIZATION",
+        "title": "Lightning-Fast Load Times",
+        "desc": "Optimized code, CDN integration, and caching strategies for superior speed."
+      },
+      "seo": {
+        "kicker": "SEO & ANALYTICS",
+        "title": "Rank Higher, Convert Better",
+        "desc": "Built-in SEO best practices and analytics integration for measurable results."
+      }
+    },
+    "whyChoose": { "heading": "WHY CHOOSE US", "subheading": "When you need repair services, we are here" },
+    "tabs": {
+      "t1Title": "Are you too an iphone user?",
+      "t1Body": "Iphones are used widely by all age groups. People find much convenience in using iphone. It also gives them a feeling of luxury yet comfort. Once you switch to iphones, you are always likely using it. The iphone lovers are also very particular about their phone charger.",
+      "t2Title": "Does your iphone also need repair?",
+      "t2Body": "Even with the best care, iPhones can sometimes need repairs. Whether it's a cracked screen, a battery issue, or a software glitch, our expert technicians are here to help get your device back to perfect working condition quickly and efficiently.",
+      "t3Title": "What services we provide?",
+      "t3Body": "We offer a comprehensive range of services for all your gadgets, including screen replacement, battery swaps, water damage repair, data recovery, and much more for phones, tablets, laptops, and gaming consoles."
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "breadcrumb": "Home / About",
+    "aboutUs": "ABOUT US",
+    "mainHeading": "14+ Years of Experience in This Field",
+    "mainText": "With over a decade of experience, Mobile and Computer Care stands as a beacon of reliability and expertise in the gadget repair industry. We pride ourselves on our commitment to quality service, rapid turnaround times, and customer satisfaction.",
+    "features": {
+      "quality": { "title": "Quality Services", "desc": "We provide top-notch repair services ensuring your device works like new." },
+      "genuine": { "title": "Genuine Parts", "desc": "We only use genuine and high-quality parts for all repairs." },
+      "security": { "title": "Data Security", "desc": "Your data's privacy and security are our utmost priority." }
+    },
+    "info": {
+      "who": { "title": "Who we are", "text": "We are the experts of gadget and device repair. Our company is the name of trust and credibility in the contemporary market. We work with strong devotion and give you 100 %. We are the symbol of mastery and our services are the representation of our hard work. With a visionary mind, we offer you guaranteed outcome." },
+      "history": { "title": "Our history", "text": "With over 15 years of experience, our motto was to bring repair and technical services with reliability and authenticity and we are successfully delivering it to our clients. We have started our root of work from the seeds of sincerity, dedication and commitment and now have established a rich environment of professionalism." },
+      "why": { "title": "Why choose us", "text": "Our mission is to deliver our clients with utter satisfaction and reliability. We strive for the best and do not make any compromises when it comes to providing you the services for which you prefer us. We are aimed to come up to your expectations." }
+    },
+    "stats": {
+      "gloriousYears": "Glorious Years",
+      "happyCustomer": "Happy Customer",
+      "serviceComplete": "Service Complete",
+      "satisfactions": "Satisfactions"
+    },
+    "team": { "heading": "OUR TEAM", "subheading": "Meet Our Experts" }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "location": "Location",
+    "contact": "Contact",
+    "email": "Email",
+    "firstName": "FIRST NAME",
+    "lastName": "LAST NAME",
+    "emailLabel": "EMAIL",
+    "phone": "PHONE",
+    "message": "MESSAGE",
+    "submit": "Submit"
+  }
+}
