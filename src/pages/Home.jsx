@@ -57,18 +57,8 @@ const HERO_SLIDES = [
 const RepairServiceHero = memo(function RepairServiceHero({ slides, onButtonClick, t }) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    if (!slides || slides.length <= 1) return;
-
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 6000);
-
-    return () => clearInterval(timer);
-  }, [slides]);
-
-  const slide = slides[currentSlide];
+  const [imagesLoaded, setImagesLoaded] = useState({});
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   // Detect mobile to swap in dedicated mobile hero images
   useEffect(() => {
@@ -79,17 +69,58 @@ const RepairServiceHero = memo(function RepairServiceHero({ slides, onButtonClic
     return () => mq.removeEventListener('change', update);
   }, []);
 
+  // Preload images
+  useEffect(() => {
+    const imagesToPreload = isMobile
+      ? [pub('hero-mbl-1.jpg'), pub('hero-mbl-2.webp')]
+      : slides.map(s => s.image);
+
+    imagesToPreload.forEach((src) => {
+      if (!imagesLoaded[src]) {
+        const img = new Image();
+        img.src = src;
+        img.onload = () => {
+          setImagesLoaded((prev) => ({ ...prev, [src]: true }));
+        };
+      }
+    });
+  }, [isMobile, slides, imagesLoaded]);
+
+  useEffect(() => {
+    if (!slides || slides.length <= 1) return;
+
+    const timer = setInterval(() => {
+      const nextIndex = (currentSlide + 1) % slides.length;
+      const nextImage = isMobile
+        ? (nextIndex === 0 ? pub('hero-mbl-1.jpg') : pub('hero-mbl-2.webp'))
+        : slides[nextIndex].image;
+
+      // Only transition if next image is loaded
+      if (imagesLoaded[nextImage]) {
+        setIsTransitioning(true);
+        setTimeout(() => {
+          setCurrentSlide(nextIndex);
+          setIsTransitioning(false);
+        }, 300);
+      }
+    }, 6000);
+
+    return () => clearInterval(timer);
+  }, [slides, currentSlide, isMobile, imagesLoaded]);
+
+  const slide = slides[currentSlide];
+
   const bgImage = isMobile
     ? (currentSlide === 0 ? pub('hero-mbl-1.jpg') : pub('hero-mbl-2.webp'))
     : slide.image;
 
   return (
     <section
-      className="relative text-white transition-all duration-1000 bg-center bg-no-repeat bg-cover"
+      className={`relative text-white bg-center bg-no-repeat bg-cover transition-opacity duration-700 ${isTransitioning ? 'opacity-0' : 'opacity-100'}`}
       style={{ backgroundImage: `url('${bgImage}')` }}
     >
       <div className="absolute inset-0 bg-black opacity-40 md:opacity-50"></div>
-      <div className="relative z-10 w-full h-[55vh] sm:h-[65vh] md:h-[70vh] flex items-center justify-center p-4 text-center">
+  <div className="relative z-10 w-full h-[55vh] sm:h-[65vh] md:h-[80vh] lg:h-[85vh] flex items-center justify-center p-4 text-center">
         <div>
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug md:leading-tight mb-3 sm:mb-5 animate-fade-in-down max-w-[92vw] md:max-w-[70vw] mx-auto">
             {slide.titleKey ? t(slide.titleKey, slide.title) : slide.title}
@@ -234,7 +265,7 @@ function AnimatedNumber({ value, duration = 1200, className }) {
       const p = Math.min(1, (now - start) / duration);
       const eased = 1 - Math.pow(1 - p, 3);
       const current = Math.floor(eased * target);
-      setDisplay(`${current}${suffix}`);
+  setDisplay(`${current}${suffix}`);
       if (p < 1) rafId = requestAnimationFrame(tick);
     };
     rafId = requestAnimationFrame(tick);
@@ -252,7 +283,7 @@ const ServiceCard = memo(function ServiceCard({ service, index, t }) {
     >
       <img loading="lazy" src={pub(service.img)} alt={service.name} className="w-full h-56 object-cover" />
       <div className="p-6">
-        <h3 className="text-lg font-semibold text-gray-800">{t(`home.services.${service.key}`, service.name)}</h3>
+  <h3 className="text-lg font-semibold text-gray-800">{t(`home.services.${service.key}`, service.name)}</h3>
       </div>
     </div>
   );
@@ -277,7 +308,7 @@ const Home = () => {
   useEffect(() => {
     const fetchApprovedReviews = async () => {
       try {
-        const response = await axios.get(`${API_URL}/api/reviews/approved`);
+  const response = await axios.get(`${API_URL}/api/reviews/approved`);
         
         const data = response?.data;
         if (Array.isArray(data)) {
@@ -479,7 +510,7 @@ const Home = () => {
       </section>
 
       {/* Contact CTA Section */}
-      <section className="relative bg-cover bg-center py-16 sm:py-20" style={{ backgroundImage: `url('${pub('contact-bg.jpg')}')` }}>
+  <section className="relative bg-cover bg-center py-16 sm:py-20" style={{ backgroundImage: `url('${pub('contact-bg.jpg')}')` }}>
         <div className="absolute inset-0 bg-black opacity-60"></div>
         <div className="relative container mx-auto px-6 text-center text-white z-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('home.contactUs', 'Contact us')}</h2>
