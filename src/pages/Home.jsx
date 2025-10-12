@@ -56,6 +56,7 @@ const HERO_SLIDES = [
 
 const RepairServiceHero = memo(function RepairServiceHero({ slides, onButtonClick, t }) {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     if (!slides || slides.length <= 1) return;
@@ -69,24 +70,39 @@ const RepairServiceHero = memo(function RepairServiceHero({ slides, onButtonClic
 
   const slide = slides[currentSlide];
 
+  // Detect mobile to swap in dedicated mobile hero images
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 640px)');
+    const update = () => setIsMobile(mq.matches);
+    update();
+    mq.addEventListener('change', update);
+    return () => mq.removeEventListener('change', update);
+  }, []);
+
+  const bgImage = isMobile
+    ? (currentSlide === 0 ? pub('hero-mbl-1.jpg') : pub('hero-mbl-2.webp'))
+    : slide.image;
+
   return (
     <section
-      className="relative bg-cover bg-center h-[70vh] flex items-center justify-center text-white transition-all duration-1000"
-      style={{ backgroundImage: `url('${slide.image}')` }}
+      className="relative text-white transition-all duration-1000 bg-center bg-no-repeat bg-cover"
+      style={{ backgroundImage: `url('${bgImage}')` }}
     >
-      <div className="absolute inset-0 bg-black opacity-50"></div>
-      <div className="relative text-center z-10 p-4">
-        <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6 animate-fade-in-down max-w-[70vw]">
-          {slide.titleKey ? t(slide.titleKey, slide.title) : slide.title}
-        </h1>
-        {slide.buttonText && (
-          <button
-            onClick={() => onButtonClick && onButtonClick(slide.link)}
-            className="bg-[#B32346] text-white px-8 py-3 rounded-lg text-base font-semibold hover:bg-opacity-90 transform hover:scale-105 transition-all duration-300"
-          >
-            {slide.buttonKey ? t(slide.buttonKey, slide.buttonText) : slide.buttonText}
-          </button>
-        )}
+      <div className="absolute inset-0 bg-black opacity-40 md:opacity-50"></div>
+      <div className="relative z-10 w-full h-[55vh] sm:h-[65vh] md:h-[70vh] flex items-center justify-center p-4 text-center">
+        <div>
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-snug md:leading-tight mb-3 sm:mb-5 animate-fade-in-down max-w-[92vw] md:max-w-[70vw] mx-auto">
+            {slide.titleKey ? t(slide.titleKey, slide.title) : slide.title}
+          </h1>
+          {slide.buttonText && (
+            <button
+              onClick={() => onButtonClick && onButtonClick(slide.link)}
+              className="bg-[#B32346] text-white px-6 py-2 sm:px-8 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-opacity-90 transform hover:scale-105 transition-all duration-300"
+            >
+              {slide.buttonKey ? t(slide.buttonKey, slide.buttonText) : slide.buttonText}
+            </button>
+          )}
+        </div>
       </div>
     </section>
   );
@@ -262,7 +278,7 @@ const Home = () => {
     const fetchApprovedReviews = async () => {
       try {
         const response = await axios.get(`${API_URL}/api/reviews/approved`);
-        // API may return an array or an object wrapper. Normalize to an array to be safe.
+        
         const data = response?.data;
         if (Array.isArray(data)) {
           setApprovedReviews(data);
