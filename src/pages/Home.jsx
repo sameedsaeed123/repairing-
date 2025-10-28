@@ -516,16 +516,22 @@ const Home = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">{t('home.contactUs', 'Contact us')}</h2>
           <p className="text-base max-w-3xl mx-auto mb-8 leading-relaxed">{t('home.contactBody', 'Mobile and Computer Care works with refined technical expertise. Contact us using the details on the website. Our latest products and services are updated regularly.')}</p>
           <div className="flex flex-col md:flex-row justify-center items-center gap-8">
-            <div className="bg-white text-gray-800 p-8 rounded-lg shadow-lg flex flex-col items-center w-72 h-48 justify-center transform hover:scale-105 transition-transform duration-300">
+            <a 
+              href="mailto:techtrust76@gmail.com" 
+              className="bg-white text-gray-800 p-8 rounded-lg shadow-lg flex flex-col items-center w-72 h-48 justify-center transform hover:scale-105 transition-transform duration-300 no-underline"
+            >
               <FiMail className="text-4xl text-[#B32346] mb-3" />
               <h3 className="text-lg font-bold mb-1">{t('home.contactCards.email', 'Send us an email')}</h3>
-              <p className="text-sm text-gray-600">computercare500@gmail.com</p>
-            </div>
-            <div className="bg-white text-gray-800 p-8 rounded-lg shadow-lg flex flex-col items-center w-72 h-48 justify-center transform hover:scale-105 transition-transform duration-300">
+              <p className="text-sm text-gray-600">techtrust76@gmail.com</p>
+            </a>
+            <a 
+              href="tel:+34632404585" 
+              className="bg-white text-gray-800 p-8 rounded-lg shadow-lg flex flex-col items-center w-72 h-48 justify-center transform hover:scale-105 transition-transform duration-300 no-underline"
+            >
               <FiPhoneCall className="text-4xl text-[#B32346] mb-3" />
               <h3 className="text-lg font-bold mb-1">{t('home.contactCards.call', 'Give us a call')}</h3>
-              <p className="text-sm text-gray-600">+44 7423526826</p>
-            </div>
+              <p className="text-sm text-gray-600">+34 632 404 585</p>
+            </a>
           </div>
         </div>
       </section>
