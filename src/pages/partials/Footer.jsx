@@ -14,7 +14,7 @@ const Footer = () => {
 					<div className="space-y-6">
 						<img src={pub('logo.png')} alt="Logo" className="h-16 bg-white p-3 rounded-lg shadow-lg" />
 						<p className="text-sm leading-relaxed text-gray-400">
-							{t('footer.tagline','Your trusted partner for mobile, computer, and gaming console repairs in the UK.')}
+							{t('footer.tagline','Your trusted partner for mobile, computer, and gaming console repairs in the Spain.')}
 						</p>
 						<div className="space-y-4">
 							<div className="flex items-start space-x-3 group">
