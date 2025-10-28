@@ -18,7 +18,6 @@ const Contact = () => {
 	const [isSubmitting, setIsSubmitting] = useState(false);
 
 	useEffect(() => {
-		// Trigger animations on component mount
 		const timer = setTimeout(() => setIsLoaded(true), 100);
 		return () => clearTimeout(timer);
 	}, []);
@@ -49,7 +48,6 @@ const Contact = () => {
 				message: t('contact.successMessage', 'Thank you for contacting us! We will get back to you soon.')
 			});
 
-			// Reset form
 			setFormData({
 				firstName: '',
 				lastName: '',
@@ -71,23 +69,29 @@ const Contact = () => {
 		{
 			icon: <FiMapPin className="w-8 h-8 text-[#B32346]" />,
 			title: t('contact.location','Location'),
-			lines: ["130 CHORLEY OLD ROAD BL1 3AT", "(BOLTON)"],
+			lines: [
+				{ type: 'text', value: '130 CHORLEY OLD ROAD BL1 3AT' },
+				{ type: 'text', value: '(BOLTON)' },
+			],
 		},
 		{
 			icon: <FiPhone className="w-8 h-8 text-[#B32346]" />,
 			title: t('contact.contact','Contact'),
-			lines: ["01204 398348", "07423 526826", "+44 7423526826"],
+			lines: [
+				{ type: 'tel', value: '0034 632404585', href: 'tel:+34632404585' },
+			],
 		},
 		{
 			icon: <FiMail className="w-8 h-8 text-[#B32346]" />,
 			title: t('contact.email','Email'),
-			lines: ["computercare500@gmail.com"],
+			lines: [
+				{ type: 'mail', value: 'techtrust76@gmail.com', href: 'mailto:techtrust76@gmail.com' },
+			],
 		},
 	];
 
 	return (
 		<main className="bg-gray-50">
-			{/* Hero Section */}
 			<section className="relative bg-gradient-to-r from-[#8f1c37] to-[#4c1d95] text-white pt-32 pb-48 text-center">
 				<div
 					className={`container mx-auto px-6 transition-all duration-1000 ease-out ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
@@ -112,9 +116,20 @@ const Contact = () => {
 								</div>
 								<h3 className="text-xl font-bold text-gray-800 mb-2">{info.title}</h3>
 								<div className="text-gray-600">
-									{info.lines.map((line, i) => (
-										<p key={i}>{line}</p>
-									))}
+									{info.lines.map((line, i) => {
+										if (typeof line === 'string') return <p key={i}>{line}</p>;
+										if (line.type === 'tel') return (
+											<p key={i}>
+												<a href={line.href} className="hover:underline text-gray-700">{line.value}</a>
+											</p>
+										);
+										if (line.type === 'mail') return (
+											<p key={i}>
+												<a href={line.href} className="hover:underline text-gray-700 break-all">{line.value}</a>
+											</p>
+										);
+										return <p key={i}>{String(line.value || '')}</p>;
+									})}
 								</div>
 							</div>
 						))}

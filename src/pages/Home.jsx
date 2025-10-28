@@ -530,7 +530,7 @@ const Home = () => {
             >
               <FiPhoneCall className="text-4xl text-[#B32346] mb-3" />
               <h3 className="text-lg font-bold mb-1">{t('home.contactCards.call', 'Give us a call')}</h3>
-              <p className="text-sm text-gray-600">+34 632 404 585</p>
+              <p className="text-sm text-gray-600">0034 632404585</p>
             </a>
           </div>
         </div>

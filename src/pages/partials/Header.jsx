@@ -86,11 +86,11 @@ const Header = memo(function Header() {
 						)}
 					</div>
 					<a
-						href="tel:+447423526826"
+						href="tel:+34632404585"
 						className="bg-[#B32346] text-white px-6 py-3 rounded-lg flex items-center space-x-2 hover:bg-opacity-90 transition-all duration-300 text-base font-semibold"
 					>
 						<FaPhoneAlt />
-						<span>{t('common.phone', '+44 7423526826')}</span>
+						<span>{t('common.phone', '0034 632404585')}</span>
 					</a>
 				</div>
 
@@ -162,11 +162,11 @@ const Header = memo(function Header() {
 
 					{/* Phone link remains in mobile menu (kept alongside language toggles) */}
 					<a
-						href="tel:+447423526826"
+						href="tel:+34632404585"
 						className="bg-[#B32346] text-white px-6 py-2 rounded-md flex items-center space-x-2 hover:bg-opacity-90 transition-all duration-300 mt-3"
 					>
 						<FaPhoneAlt />
-						<span>{t('common.phone', '+44 7423526826')}</span>
+						<span>{t('common.phone', '0034 632404585')}</span>
 					</a>
 				</div>
 			</div>

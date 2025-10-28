@@ -27,16 +27,16 @@ const Footer = () => {
 								<div className="bg-[#B32346] bg-opacity-10 p-2 rounded-lg group-hover:bg-opacity-20 transition-all">
 									<FiPhone className="text-lg text-white" />
 								</div>
-								<a href="tel:+447423526826" className="text-sm hover:text-white transition-colors">
-									+44 7423526826
+								<a href="tel:+34632404585" className="text-sm hover:text-white transition-colors">
+									0034 632404585
 								</a>
 							</div>
 							<div className="flex items-center space-x-3 group">
 								<div className="bg-[#B32346] bg-opacity-10 p-2 rounded-lg group-hover:bg-opacity-20 transition-all">
 									<FiMail className="text-lg text-white" />
 								</div>
-								<a href="mailto:computercare500@gmail.com" className="text-sm hover:text-white transition-colors break-all">
-									computercare500@gmail.com
+								<a href="mailto:techtrust76@gmail.com" className="text-sm hover:text-white transition-colors break-all">
+									techtrust76@gmail.com
 								</a>
 							</div>
 						</div>
